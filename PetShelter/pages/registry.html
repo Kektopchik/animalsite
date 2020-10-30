@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/registry.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
 	
 	<title></title>
 </head>
@@ -38,7 +39,9 @@
 		<content>
 			<div class="registry-petCard">
 				<div class="registry-petCard__header">
-					Карточка учета животного  №
+					<h1>Карточка учета животного  №</h1>
+					<div class="pet_cardNumber"></div> 
+
 				</div>
 				<div class="registry-petCard__city"></div>
 				<div class="registry-petCard__address"></div>
@@ -294,6 +297,18 @@
 			<div class="footer__inner"></div>
 		</footer>
 
+	</div>
+
+	<div id = 'popup' class = 'popup'>
+	<div class = 'popup_body'>
+		<div class = 'popup_content'>
+		<a href = '#' class = 'popup_close'>x</a>
+			<div class = 'popup_title'>Это модальное окно</div>
+			<div class = 'popup_text'>
+				Тут будет карточка 
+			</div>
+		</div>
+	</div>
 	</div>
 
 </body>
