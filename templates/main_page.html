@@ -67,47 +67,14 @@
 			<div class="content__featuredPets">
 				<h1>Featured Pets</h1>
 				<div class="content__featuredPets__cards">
+                    {% for pet in animals %}
 					<div class="petCard">
-						<div class="petCard__img"></div>
-						<div class="petCard__name">12312312</div>
-						<div class="petCard__description">132132132131</div>
-						<div class="petCard__likeButton">1231312</div>
+						<div class="petCard__img">pet.img</div>
+						<div class="petCard__name">pet.name</div>
+						<div class="petCard__description">pet.description</div>
+						<div class="petCard__likeButton">pet.likeButton</div>
 					</div>
-
-					<div class="petCard">
-						<div class="petCard__img"></div>
-						<div class="petCard__name"></div>
-						<div class="petCard__description"></div>
-						<div class="petCard__likeButton"></div>
-					</div>
-
-					<div class="petCard">
-						<div class="petCard__img"></div>
-						<div class="petCard__name"></div>
-						<div class="petCard__description"></div>
-						<div class="petCard__likeButton"></div>
-					</div>
-
-					<div class="petCard">
-						<div class="petCard__img"></div>
-						<div class="petCard__name"></div>
-						<div class="petCard__description"></div>
-						<div class="petCard__likeButton"></div>
-					</div>
-
-					<div class="petCard">
-						<div class="petCard__img"></div>
-						<div class="petCard__name"></div>
-						<div class="petCard__description"></div>
-						<div class="petCard__likeButton"></div>
-					</div>
-
-					<div class="petCard">
-						<div class="petCard__img"></div>
-						<div class="petCard__name"></div>
-						<div class="petCard__description"></div>
-						<div class="petCard__likeButton"></div>
-					</div>
+                    {% endfor %}
 				</div>
 
 			</div>
