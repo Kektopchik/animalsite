@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Animal(models.Model):
+class Animals(models.Model):
     SEX_ANIMAL = (
         ('M', 'Кабель'),
         ('Ж', 'Сучка'),
@@ -63,9 +63,9 @@ class Ecto_endo_info(models.Model):
 
 
 class Vaccination(models.Model):
-    vac_date = models.CharField(null=True, verbose_name="Дата")
-    vac_type = models.CharField(null=True, verbose_name="Вид вакцины")
-    vac_no = models.CharField(null=True, verbose_name="№ серии")
+    vac_date = models.CharField(null=True, verbose_name="Дата", max_length=100)
+    vac_type = models.CharField(null=True, verbose_name="Вид вакцины", max_length=100)
+    vac_no = models.CharField(null=True, verbose_name="№ серии", max_length=100)
 
 
 class Health(models.Model):
