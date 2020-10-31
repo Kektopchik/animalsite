@@ -22,14 +22,14 @@ class Animal(models.Model):
     area = models.IntegerField(null=True, verbose_name="Вольер №", default="")
 
 
-class Additional_dates(models.Model):
+class AdditionalDates(models.Model):
     id_label = models.CharField(null=True,max_length=20, verbose_name="Идентификационная метка", default="")
     sterilization_date = models.CharField(null=True,max_length=40, verbose_name="Дата стерилизации", default="")
     doctor = models.CharField(null=True,max_length=50, verbose_name="ФИО вет врача", default="")
     socialized = models.BinaryField(null=True, verbose_name="Социализировано (да/нет)", default="")
 
 
-class Catch_info(models.Model):
+class CatchInfo(models.Model):
     act_of_adm = models.CharField(null=True,max_length=20, verbose_name="Акт о поступлении животного №", default="")
     act_of_adm_data = models.DateField(null=True, verbose_name="Акт о поступлении животного, дата", default="")
     district = models.CharField(null=True,max_length=10, verbose_name="Административный округ", default="")
@@ -37,13 +37,13 @@ class Catch_info(models.Model):
     catch_address = models.CharField(null=True,max_length=100, verbose_name="Адоес места отлова", default="")
 
 
-class New_owner(models.Model):
+class NewOwner(models.Model):
     entity = models.CharField(null=True,max_length=50, verbose_name="Юридическое лицо", default="")
     trustee = models.CharField(null=True,max_length=50, verbose_name="ФИО опекунов", default="")
     individual = models.CharField(null=True,max_length=50, verbose_name="Физическое лицо", default="")
 
 
-class Animal_move(models.Model):
+class AnimalMove(models.Model):
     shelter_add_date = models.DateField(null=True, verbose_name="Дата поступления в приют", default="")
     shelter_add_act = models.CharField(max_length=100, null=True, verbose_name="Акт №", default="")
     shelter_leave_date = models.DateField(null=True, verbose_name="Дата выбития из приюта", default="")
@@ -58,7 +58,7 @@ class Response(models.Model):
     worker_name = models.CharField(null=True,max_length=50, verbose_name="ФИО сотрудника по уходу за животным", default="")
 
 
-class Ecto_endo_info(models.Model):
+class EctoEndoInfo(models.Model):
     ecto_no_p_p = models.IntegerField(null=True, verbose_name="№ п/п", default="")
     ecto_endo_data = models.DateField(null=True, verbose_name="Дата", default="")
     drugs_name = models.CharField(null=True,max_length=50, verbose_name="Название препарата", default="")
