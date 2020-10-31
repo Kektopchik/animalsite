@@ -59,14 +59,14 @@ class Response(models.Model):
 
 
 class EctoEndoInfo(models.Model):
-    ecto_no_p_p = models.IntegerField(null=True, verbose_name="№ п/п", default="")
+    ecto_no_p_p = models.CharField(max_length = 20, null=True, verbose_name="№ п/п", default="")
     ecto_endo_data = models.DateField(null=True, verbose_name="Дата", default="")
     drugs_name = models.CharField(null=True,max_length=50, verbose_name="Название препарата", default="")
     drugs_dose = models.IntegerField(null=True, verbose_name="Доза", default="")
 
 
 class Vaccination(models.Model):
-    vac_no_p_p = models.IntegerField(null=True, verbose_name="№ п/п", default="")
+    vac_no_p_p = models.CharField(max_length = 20, null=True, verbose_name="№ п/п", default="")
     vac_date = models.CharField(null=True, verbose_name="Дата", default="")
     vac_type = models.CharField(null=True, verbose_name="Вид вакцины", default="")
     vac_no = models.CharField(null=True, verbose_name="№ серии", default="")
