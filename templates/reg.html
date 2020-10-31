@@ -1,0 +1,238 @@
+﻿<html>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/reg.css">
+
+	<head>
+		<title>Регистрация</title>
+	</head>
+		<style>
+			.error{
+				border: 2px solid #d0d0d0;
+				border-bottom: 3px solid #c22;
+				border-radius: 2px;
+
+				border: 2px solid #d0d0d0;
+				
+				height: 36px;
+				max-width: 320px;
+				min-width: 320px;
+				font-size: 17px;
+			}
+						
+			.input_text{
+				border: 2px solid #d0d0d0;
+				border-radius: 2px;
+				height: 36px;
+				min-width: 320px;
+			}
+			.input_text:hover{
+				border: 2px solid #d0d0d0;
+				border-bottom: 1px solid #c22;
+			}
+			.submitButton{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 90px;
+				height: 45px;
+				background-color: #c22;
+				/*border-top: 2px solid #f23;
+				border-left: 1px solid #f23;*/
+				border-radius: 2px;
+				border-style: none;
+				color: #fff;
+			}
+
+			.submitButton:hover{
+				background-color: #f12;
+			}
+		</style>
+		<script>
+			function login_check()
+			{
+				var str = form.login.value;
+				var text = new String(str);				
+				var mask = new RegExp("^[A-Za-z0-9]{3,}$");				
+				var pr = mask.test(text);
+				
+				if (pr == false)
+				{
+					form.login.className = "error";
+				}
+				else
+				{
+					form.login.className = "input_text";
+				}
+			}
+			
+			function pass_check()
+			{
+				var str = form.pass.value;
+				var text = new String(str);				
+				var mask = new RegExp("^[A-Za-z0-9А-Яа-я]{3,}$");				
+				var pr = mask.test(text);
+				
+				if (pr == false)
+				{
+					form.pass.className = "error";
+				}
+				else
+				{
+					form.pass.className = "input_text";
+				}
+			}
+			
+			function pass_confirm()
+			{
+				if(form.pass.value != form.pass2.value)
+				{
+					form.pass2.className = "error";
+				}
+				else
+				{
+					form.pass2.className = "input_text";
+				}
+			}
+			
+			function name_check()
+			{
+				var str = form.name.value;
+				var text = new String(str);				
+				var mask = new RegExp("^[А-Яа-я]{2,}$");				
+				var pr = mask.test(text);
+				
+				if (pr == false)
+				{
+					form.name.className = "error";
+				}
+				else
+				{
+					form.name.className = "input_text";
+				}
+			}
+			
+			function fam_check()
+			{
+				var str = form.fam.value;
+				var text = new String(str);				
+				var mask = new RegExp("^[А-Яа-я]{2,}$");				
+				var pr = mask.test(text);
+				
+				if (pr == false)
+				{
+					form.fam.className = "error";
+				}
+				else
+				{
+					form.fam.className = "input_text";
+				}
+			}
+			
+			function mail_check()
+			{
+				var str = form.mail.value;
+				var text = new String(str);				
+				var mask = new RegExp("[@]");				
+				var pr = mask.test(text);
+				
+				if (pr == false)
+				{
+					form.mail.className = "error";
+				}
+				else
+				{
+					form.mail.className = "input_text";
+				}
+			}
+		</script>
+	
+	<body>
+		<div class="wrapper">
+			
+					<form name=form>
+						<h1 align = 'center'>Регистрация</h1>
+						<p>Логин</p>
+							<div class="form-row">
+								<input type=text class = "input_text" name=login onblur="login_check();">
+								<div class="form-row__right-col"><p>
+									Придумайте логин
+								</p></div>
+							</div>
+							
+						
+						<p>Пароль</p>
+							<div class="form-row">
+							<input type=password class = "input_text" name=pass onblur="pass_check();">
+							<div class="form-row__right-col">
+								<p>
+									Пароль не может быть короче 8 символов и должен состоять из латинских букв и цифр.
+								</p>
+							</div>
+							</div>
+							<p>Подтвердите пароль</p>
+							<div class="form-row">
+								<input type=password class = "input_text" name=pass2 onblur="pass_confirm();">
+								<div class="form-row__right-col">
+									<p>
+										
+									</p>
+								</div>
+							</div>
+						<p>Имя<p>
+							<div class="form-row">
+								<input type=text class = "input_text" name=name onblur="name_check();">
+								<div class="form-row__right-col">
+									<p>
+										
+									</p>
+								</div>
+
+							</div>
+							
+							<p>Фамилия</p>
+							<div class="form-row">
+								<input type=text class = "input_text" name=fam onblur="fam_check();">
+								<div class="form-row__right-col">
+									<p>
+									Поле обязательно для заполнения.
+									Используйте буквы русского алфавита.
+									</p>
+								</div>
+							</div>
+
+							<p>Почта для связи</p>
+							<div class="form-row">
+								<input type=text class = "input_text" name=mail onblur="mail_check();">
+								<div class="form-row__right-col">
+									<p>
+									
+									</p>
+								</div>
+								
+							</div>
+							
+							<p>Организация</p>
+							<div class="form-row">
+							<select>
+								<option>Обычный пользователь</option>
+								<option>ДЖКХ</option>
+								<option>префектура</option>
+								<option>ГБУ "Автомобильные дороги" или ГБУ "Доринвест"</option> 
+								<option>Представитель приюта</option> 
+							</select>
+
+								<div class="form-row__right-col">
+									<p>
+									
+									</p>
+								</div>
+							</div>
+							
+						
+						<p><input type=submit class = "submitButton" value="Продолжить"></p>
+					</form>
+				</div>	
+			
+			
+	</body>
+</html>

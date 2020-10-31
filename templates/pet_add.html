@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/registry.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/pet_add.css">
+	<title></title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="header_Container">
+			<header>
+			<div class="header__sidebarLeft"></div>
+			<div class="header__sidebarRight">
+				<div class="autorization">
+					Войти
+				</div>
+			</div>	
+		</header>
+
+		<nav>
+			
+			<div class="nav__sidebar_left">
+				<div class="nav__logo">LOGO</div>
+				
+				<div class="nav__sidebar_button">Наши питомцы</div>
+				
+			</div>
+
+			<div class="nav__sidebar_right">
+				<div class="nav__sidebar_button">Понравившиеся</div>
+				
+				
+			</div>
+		</nav>
+		</div>
+
+		<content>
+	<div class="registry-petCard">
+				<div class="registry-petCard__header">
+					<h1>Карточка учета животного  №</h1>
+					<div class="pet_cardNumber"></div> 
+
+				</div>
+				<div class="registry-petCard__item">
+					<p>Приют для животных по адресу</p>
+					<input class="shelter_address"/>
+				</div>
+
+				<div class="registry-petCard__item">
+					<p>Эксплуатирующая организация</p>
+					<input class="organization"/>
+				</div>
+
+				<div class="registry-petCard__item">
+					<p>Номер вальера</p>
+					<input class="pet_valierNumber"/>
+				</div>
+
+				<h2>Основные сведения</h2>
+
+				<div class="registry-petCard__cols">
+					<div class="registry-petCard__cols__col1">
+						<div class="registry-petCard__photo"></div>
+					</div>
+
+					<div class="registry-petCard__cols__col2">
+						<div class="registry-petCard__cols__col2__item">
+							<p>Тип животного</p>
+							<input class="pet_type"/>
+						</div>
+						<div class="registry-petCard__cols__col2__item">
+							<p>Пол</p>
+							<input class="pet_gender"/>
+						</div>
+						<div class="registry-petCard__cols__col2__item">	<p>Окрас</p>
+							<input class="pet_color"/></div>
+						<div class="registry-petCard__cols__col2__item">
+							<p>Уши</p>
+							<input class="pet_ears"/>
+						</div>
+						<div class="registry-petCard__cols__col2__item">
+							<p>Размер</p>
+							<input class="pet_size"/>
+						</div>
+					</div>
+
+					<div class="registry-petCard__cols__col3">
+						<div class="registry-petCard__cols__col3__item">
+							<p>Возраст</p>
+							<input class="pet_age"/>
+						</div>
+
+						<div class="registry-petCard__cols__col3__item">
+							<p>Вес</p>
+							<input class="pet_weight"/>
+						</div>
+
+						<div class="registry-petCard__cols__col3__item">
+							<p>Кличка</p>
+							<input class="pet_name"/>
+						</div>
+
+						<div class="registry-petCard__cols__col3__item">
+							<p>Порода</p>
+							<input class="pet_breed"/>
+						</div>
+
+						<div class="registry-petCard__cols__col3__item">
+							<p>Шерсть</p>
+							<input class="pet_wool"/>
+						</div>
+
+						<div class="registry-petCard__cols__col3__item">
+							<p>Хвост</p>
+							<input class="pet_tail"/>
+						</div>
+	
+					</div>
+
+					
+				</div>
+
+				<div class="registry-petCard__item">
+						<p>Особые приметы</p>
+							<input class="pet_specialSigns"/>
+					</div>
+					<div class="registry-petCard__item">
+						<p>Характер</p>
+							<input class="pet_character"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Идентификационная метка</p>
+							<input class="pet_identificator"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Дата стерилизации</p>
+							<input class="pet_sterilisationDate"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Место стерилизации</p>
+							<input class="pet_sterilisationPlace"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>ФИО ветеринарного врача</p>
+							<input class="pet_veterinarian"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Социализировано/готово к пристройству</p>
+							<input class="pet_socialization"/>
+					</div>
+
+					<h2>Сведения об отлове</h2>
+
+					<div class="registry-petCard__item">
+						<p>Заказ-наряд №</p>
+							<input class="pet_orderNumber"/>
+						<p>от</p>
+							<input class="pet_orderDate"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Акт отлова №</p>
+							<input class="pet_
+						captureAct"/>
+						<p>от</p>
+							<input class="pet_captureDate"/>
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Адрес места отлова</p>
+							<input class="pet_captureAddress"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Видеофиксация отлова</p>
+							<input class="pet_captureVideofixation"/>
+						
+					</div>
+
+					<h2>Сведения о новых владельцах</h2>
+
+					<div class="registry-petCard__item">
+						<p>Юридическое лицо</p>
+							<input class="entity_name"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>адрес</p>
+							<input class="entity_address"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>телефон</p>
+							<input class="entity_phoneNumber"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Ф.И.О. опекунов</p>
+							<input class="trustee_name"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>контактные данные</p>
+							<input class="trustee_contactDetails"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Физическое лицо(Ф.И.О.)</p>
+							<input class="individual_name"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>паспорт РФ серии</p>
+							<input class="passport_series"/>
+
+						<p>номер</p>
+							<input class="passport_number"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>выдан</p>
+							<input class="passport_issuePlace"/>
+						<p>от</p>
+							<input class="passport_issueDate"/>
+						
+
+
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>зарегистрированный(ая) по адресу</p>
+							<input class="passport_registration"/>
+						
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>контактные данные</p>
+							<input class="individual_contactDetails"/>
+					</div>
+
+					<h2>Движение животного</h2>
+
+					<div class="registry-petCard__item">
+						<p>Дата поступления в приют</p>
+							<input class="pet_admissionDate"/>
+						<p>Акт №</p>
+
+							<input class="pet_admissionActNumber"/>
+
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Дата выбытия из приюта</p>
+							<input class="pet_disposalDate"/>
+						<p>Акт №</p>
+
+							<input class="pet_disposalActNumber"/>
+
+
+					</div>
+
+					<div class="registry-petCard__item">
+						<p>Причина выбытия из приюта</p>
+						<input class="pet_disposalReason"/>
+
+					</div>						
+
+					<h2>Ответственные за животное</h2>
+
+					<div class="registry-petCard__item">
+						<p>Ф.И.О. руководителя приюта/подпись</p>
+						<input class="shelterManager_name"/>
+						<div class="shelterManager_signature"></div>
+
+					</div>	
+
+				
+
+					<div class="registry-petCard__item">
+						<p>Ф.И.О. сотрудника по уходу за животным/подпись</p>
+						<input class="employee_name"/>
+						<div class="employee_signature"></div>
+
+					</div>	
+
+
+			</div>
+		</div>
+
+		</content>
+			<!-- =========[/addPet]================== -->
+
+</body>
+</html>
