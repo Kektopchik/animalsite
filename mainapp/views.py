@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import ListView
-from .models import Animal
+from .models import Animals
 
 class MainView(ListView):
-    animal = Animal
-    queryset = Animal.objects.all()
+    animal = Animals
+    queryset = Animals.objects.all()
     template_name = "main_page.html"
