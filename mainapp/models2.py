@@ -3,8 +3,8 @@ from django.db import models
 
 class Animal(models.Model):
     SEX_ANIMAL = (
-        ('M', 'Кабель'),
-        ('Ж', 'Сучка'),
+        ('M', 'Мужской'),
+        ('Ж', 'Женский'),
     )
     record_card = models.CharField(null=True, max_length=20, verbose_name="Карточка учета", default="")
     kind = models.CharField(null=True,max_length=7, verbose_name="Вид", default="")
