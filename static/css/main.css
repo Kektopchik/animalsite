@@ -43,13 +43,24 @@ header{
 	/*margin: 0 10px;*/
 	width: 220px;
 	height: 27px;
-	background-color: #c22;
+	/*background-color: #c22;*/
 }
 .header__sidebarRight{
 	/*margin: 0 10px;*/
 	width: 170px;
 	height: 27px;
-	background-color: #0c1014;
+
+
+	/*background-color: #0c1014;*/
+}
+.autorization{
+	text-align: right;
+	color:#0c1014;
+	transition: .2s;
+}
+
+.autorization:hover{
+	color: #c22;
 }
 
 nav{
@@ -92,7 +103,8 @@ nav{
 	justify-content: space-between;
 }
 .nav__sidebar_button{
-	padding: 10px 20px;
+	padding: 10px 0;
+	margin-left: 20px;
 
 
 }
@@ -102,7 +114,8 @@ nav{
 }
 .nav__sidebar_liked{
 	width: 40px;
-	height: 40px;
+	
+	padding: 10px 0;
 	/*background-image: url("../img/heart-icon.png");
 	background-size: contain;*/
 	
@@ -238,6 +251,9 @@ content{
 	
 	
 
+}
+.petCard{
+	padding: 0 10px;
 }
 @media (max-width: 1400px){
 	.wrapper{
