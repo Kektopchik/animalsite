@@ -6,3 +6,8 @@ class MainView(ListView):
     animal = Animals
     queryset = Animals.objects.all()
     template_name = "main_page.html"
+
+class PetUserView(ListView):
+    animal = Animals
+    queryset = Animals.objects.all()
+    template_name = "pets.html"
