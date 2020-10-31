@@ -11,3 +11,10 @@ class PetUserView(ListView):
     animal = Animals
     queryset = Animals.objects.all()
     template_name = "pets.html"
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['animals'] = Animals.objects.all()
+        print(context['animals'])
+        return context
+

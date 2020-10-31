@@ -45,12 +45,14 @@
 					
 				</div>
 				<div class="content__featuredPets__cards">
+                    {% for pet in animals %}
 					<div class="petCard">
 						<div class="petCard__img"></div>
-						<div class="petCard__name"></div>
-						<div class="petCard__description"></div>
+						<div class="petCard__name">{{ pet.nickname }}</div>
+						<div class="petCard__sex">{{ pet.sex }}</div>
 						<div class="petCard__likeButton"></div>
 					</div>
+                    {% endfor %}
 
 					<div class="petCard">
 						<div class="petCard__img"></div>
