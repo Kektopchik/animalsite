@@ -18,3 +18,8 @@ class PetUserView(ListView):
         print(context['animals'])
         return context
 
+
+class PetCardView(ListView):
+    animal = Animals
+    queryset = Animals.objects.all()
+    template_name = "pet_card.html"

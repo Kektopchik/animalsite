@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/registry.css">
-	<link rel="stylesheet" type="text/css" href="../css/popup.css">
-	<link rel="stylesheet" type="text/css" href="../css/pet_add.css">
-	<link rel="stylesheet" type="text/css" href="../css/pet_card.css">
-	<title></title>
-</head>
-<body>
+{% extends  'base.html' %}
+{% load static %}
+
+{% block main %}
 
 	<div class="wrapper">
 		<div class="header_Container">
@@ -303,9 +296,6 @@
 
 			</div>
 		</div>
-		
 		</content>
 			<!-- =========[/addPet]================== -->
-
-</body>
-</html>
+{% endblock %}
